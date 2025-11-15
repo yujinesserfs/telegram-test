@@ -6,6 +6,11 @@ BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID_1 = os.getenv("TELEGRAM_CHAT_ID_1")
 CHAT_ID_2 = os.getenv("TELEGRAM_CHAT_ID_2")
 
+# 디버그: 환경변수 값 확인
+print("DEBUG: BOT_TOKEN =", BOT_TOKEN)
+print("DEBUG: CHAT_ID_1 =", CHAT_ID_1)
+print("DEBUG: CHAT_ID_2 =", CHAT_ID_2)
+
 CHAT_IDS = [cid for cid in [CHAT_ID_1, CHAT_ID_2] if cid]
 
 if not CHAT_IDS:
